@@ -1,0 +1,28 @@
+<h4>Employees List</h4>
+
+<a routerLink="/add-employee"><button style="float: right;">Add Employee</button></a>
+
+<table class="table" style="margin-top: 50px;">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Mobile Number</th>
+        <th scope="col">Email</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of employeeList">
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.name}}</td>
+        <td>{{item.mobile_number}}</td>
+        <td>{{ item.email }}</td>
+        <td><a [routerLink]="['/edit-employee', item.id]">Edit</a>
+          <br>
+          <a style="cursor: pointer;" (click)="deleteEmployee(item.id)">Delete</a>
+        </td>
+      </tr>
+     
+    </tbody>
+  </table>
