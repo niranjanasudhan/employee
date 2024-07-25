@@ -11,6 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { EmployeeViewComponent } from './employee-view/employee-view.component';
 import { EmployeeViewSingleComponent } from './employee-view-single/employee-view-single.component';
+import { SynchronousComponent } from './synchronous/synchronous.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { EmployeeViewSingleComponent } from './employee-view-single/employee-vie
     AddEmployeeComponent,
     EditEmployeeComponent,
     EmployeeViewComponent,
-    EmployeeViewSingleComponent
+    EmployeeViewSingleComponent,
+    SynchronousComponent
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,7 @@ import { EmployeeComponent } from './employee/employee.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { EmployeeViewComponent } from './employee-view/employee-view.component';
+import { SynchronousComponent } from './synchronous/synchronous.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,11 @@ const routes: Routes = [
   {
     path:'employee-view',
     component: EmployeeViewComponent
+  }
+  ,
+  {
+    path:'synchronous',
+    component: SynchronousComponent
   }
 
   
