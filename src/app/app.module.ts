@@ -9,13 +9,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
+import { EmployeeViewComponent } from './employee-view/employee-view.component';
+import { EmployeeViewSingleComponent } from './employee-view-single/employee-view-single.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     EmployeeComponent,
     AddEmployeeComponent,
-    EditEmployeeComponent
+    EditEmployeeComponent,
+    EmployeeViewComponent,
+    EmployeeViewSingleComponent
   ],
   imports: [
     BrowserModule,
